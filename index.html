@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Doggy Doppelgänger</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'> -->
+	<link href='https://fonts.googleapis.com/css?family=Pacifico|Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div>
+				<h1>Find your Doggy Doppelgänger</h1>
+				<h3>Answer the questions below to find your doggy doppelgänger. Don't wait any longer!</h3>
+				<a href="#main" class="smoothScroll">Click here to take the Quiz!</a>
+			</div>
+		</header>
+
+		<main id="main">
+			<section class="questions">
+				<form>
+					<div>
+						<p>What is your hair type?</p>
+						<input type="radio" id="curly" name="hairType" value="curly" required><label for="curly">Curly</label>
+						<input type="radio" id="straight" name="hairType" value="straight"><label for="straight">Straight</label>
+					</div>
+
+					<div>
+						<p>What is your personality type?</p>
+						<input type="radio" id="lazy" name="personalityType" value="lazy" required><label for="lazy">Lazy</label>
+						<input type="radio" id="active" name="personalityType" value="active"><label for="active">Active</label>
+						<input type="radio" id="joker" name="personalityType" value="joker"><label for="joker">Joker</label>
+						<input type="radio" id="intellectual" name="personalityType" value="intellectual"><label for="intellectual">Intellectual</label>
+					</div>
+
+					<div>
+						<p>Do you have any distinguishing features?</p>
+						<input type="radio" id="manBun" name="distinguishingType" value="manBun" required><label for="manBun">Man Bun</label>
+						<input type="radio" id="funkyTeeth" name="distinguishingType" value="funkyTeeth"><label for="funkyTeeth">Funky Teeth</label>
+						<input type="radio" id="beard" name="distinguishingType" value="beard"><label for="beard">Beard</label>
+						<input type="radio" id="bald" name="distinguishingType" value="bald"><label for="bald">Bald</label>
+						<input type="radio" id="normal" name="distinguishingType" value="none"><label for="normal">I'm Normal</label>
+					</div>
+
+					<div>
+						<p>How tall are you?</p>
+						<input type="radio" id="tall" name="height" value="tall" required><label for="tall">On The Tall Side</label>
+						<input type="radio" id="short" name="height" value="short"><label for="short">On The Short Side</label>
+					</div>
+					
+					<div class="submit">
+						<a href="#answers" class="send smoothScroll">
+						<input type="submit" class="submitButton" value="Submit!">
+						</a>
+						<input type="reset" class="resetQuiz" value="Reset Quiz">
+					</div>
+				</form>
+			</section> <!-- QUESTIONS SECTION -->
+			<section id="answers" class="answers">
+				<h3>Your doggy doppelgänger is:</h3>
+				<div>
+					<img src="assets/landingImage.png" alt="" class="doppelganger">
+					<h2 class="breedName">Who's it going to be?</h2>
+				</div>
+			</section> <!-- ANSWERS SECTION -->
+		</main>
+	</div> <!-- WRAPPER DIV -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
+	<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+	<script src="javascript/script.js"></script>
+</body>
+</html>
